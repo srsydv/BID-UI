@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidding</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js" defer=""></script>
+        <script src="/index.63aff760.js" defer=""></script>
+
+        <div id="createItem">
+          <h4>Get max Competitors</h4>
+            <button id="getCompetitors">Get Competitors</button>
+            <span id="span3"> </span>
+        </div>
+        <br>
+        -----------------------------------------------------------
+
+        <div id="createItem">
+          <h4>Set Max Competitors limit for games</h4>
+            <input type="text" id="setCompetitor" required="" placeholder="Enter Max Competitors Number">
+          
+      
+            <button id="setCompetitors">Set Competitors</button>
+            <span id="span2"> </span>
+            <span id="process2"> </span>
+        </div>
+        <br>
+        -----------------------------------------------------------
+
+   
+    <div id="createItem">
+      <!-- <p1>Account1 = 0xF7D3bdf086d66E548c945CA410BB80Fc00E49831 </p1>
+      <p2>Account2 = 0x29d14148f9fd7F8EA48c1F81E494c9Bf859CB074 </p2>
+      <p3>Account3 = 0x4c676085933233E3b875De927D7E05212C20c800 </p3>
+      <br>
+      <p4>ERC20 Token = 0x08268C6A177Cd529DEAB226829C739C93f463994 </p4> -->
+      <h4>Create your game</h4>
+        <input type="text" id="currency" required="" placeholder="Enter currency address">
+      <input type="text" id="minPrice" required="" placeholder="Min Price">
+      <input type="text" id="bidStartTime" required="" placeholder="Bid Start Time">
+      <input type="text" id="bidEndTime" required="" placeholder="Bid End Time">
+
+      <input type="text" id="addBidders" required="" placeholder="Add Bidders (True/False)">
+
+      <input type="text" id="TotleCompetitors" required="" placeholder="Totle No of Competitors">
+
+      <input type="text" id="competitor1" required="" placeholder="Enter Competitors Name">
+
+      <input type="text" id="competitor2" required="" placeholder="Enter Competitors Name">
+
+      <input type="text" id="competitor3" required="" placeholder="Enter Competitors Name">
+  
+        <button id="Register">Register Game</button>
+        <span id="span1"> </span>
+        <span id="process1"> </span>
+    </div>
+    <br>
+    -----------------------------------------------------------
+
+        <div id="createItem">
+          <h4>Add Bidder</h4>
+            <input type="text" id="gameId1" required="" placeholder="Enter Your gameId1">
+
+          <input type="text" id="bidderAddress1" required="" placeholder="Enter Bidder Address">
+          
+      
+            <button id="addBidder">Add Bidder</button>
+            <span id="span4"> </span>
+            <span id="process2"> </span>
+        </div>
+        <br>
+        -----------------------------------------------------------
+
+        <div id="createItem">
+          <h4>Remove Bidder</h4>
+            <input type="text" id="gameId2" required="" placeholder="Enter Your gameId1">
+
+          <input type="text" id="bidderAddress2" required="" placeholder="Enter Bidder Address">
+          
+      
+            <button id="removeBidder">Remove Bidder</button>
+            <span id="span5"> </span>
+        </div>
+        <br>
+        -----------------------------------------------------------
+
+        <div id="createItem">
+          <h4>Bidder Verification</h4>
+            <input type="text" id="gameId3" required="" placeholder="Enter Your gameId1">
+
+          <input type="text" id="bidderAddress3" required="" placeholder="Enter Bidder Address">
+          
+      
+            <button id="Verification">Check</button>
+            <span id="span6"> </span>
+        </div>
+        <br>
+        -----------------------------------------------------------
+
+        <div>
+      <div id="Approve">
+          <h4>Approve</h4>
+          
+          <input type="text" id="erc20token" required="" placeholder="ERC20 Address">
+        <input type="text" id="tokenamount1" required="" placeholder="Enter Amount">
+    
+          <button id="btnApprove">Approve</button>
+          <span id="123"></span>
+          <span id="process2"> </span>
+      </div>
+
+    <!-- <div id="createErc20">
+        <h4>Mint ERC20 Tokens</h4>
+        <input
+        type="text"
+        id="ownerAddressERC20"
+        required
+        placeholder="Enter owner Address"
+      />
+      <input
+        type="number"
+        id="tokenAmount"
+        required
+        placeholder="Enter Amount"
+      />
+  
+        <button id="btnCreateERC20">Mint ERC20</button>
+    </div> -->
+
+    <div id="getERC20">
+        <h4>Bid on Game</h4>
+        <input type="number" id="gameId4" required="" placeholder="GameId">
+      <input type="text" id="competitorIndex" required="" placeholder="Competitor Index">
+        <input type="text" id="getTokenAmount" required="" placeholder="Amount">
+  
+        <button id="btnBid">Bid</button>
+        <span id="span7"></span>
+          
+    </div>
+    <br>
+---------------------------------------------------------------------------------
+    <div id="getERC20">
+        <h4>Decide Winner</h4>
+        <input type="text" id="gameId5" required="" placeholder="GameId">
+        <input type="number" id="competitorIndex1" required="" placeholder="Competitor Index">
+  
+        <button id="decideWinner">Decide Winner</button>
+        <span id="span8"> </span>
+    </div>
+
+<br>
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+    <div id="getERC20">
+        <h4>claim Your winning Amount</h4>
+        <input type="text" id="gameId6" required="" placeholder="GameId">
+        <input type="text" id="competitorIndex2" required="" placeholder="Competitor Index">
+        <input type="text" id="ERC20Address" required="" placeholder="ERC20Address">
+      <input type="text" id="receiver" required="" placeholder="Receiver">
+  
+        <button id="withdraw">Claim</button>
+        <span id="span9"> </span>
+    </div>
+
+<br>
+---------------------------------------------------------------------------------
+
+  </div></body>
+</html>

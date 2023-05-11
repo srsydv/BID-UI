@@ -1,0 +1,884 @@
+{
+  "contractName": "gameStorage",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "Bidders",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "Competitors",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "competitor",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "bidderAddressIndex",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "gameId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "gamesDetail",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "currency",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "gameOwner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "gameCreationTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "addBidders",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bidStartTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bidEndTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "winnerDecided",
+          "type": "bool"
+        },
+        {
+          "internalType": "enum gameStorage.gameState",
+          "name": "state",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"Bidders\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"Competitors\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"competitor\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"bidderAddressIndex\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"gameId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"gamesDetail\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"currency\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"gameOwner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"gameCreationTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"addBidders\",\"type\":\"bool\"},{\"internalType\":\"uint256\",\"name\":\"bidStartTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"bidEndTime\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"winnerDecided\",\"type\":\"bool\"},{\"internalType\":\"enum gameStorage.gameState\",\"name\":\"state\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/gameStorage.sol\":\"gameStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Libraries/LibGame.sol\":{\"keccak256\":\"0xb7d7a1aa37da7efe81004eaf248f1db3285b8140a9ae19aca2f999052d70c704\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fa68bc645815b5206e12011c713d19f00547e3a15bad8d854b69cd4ea03d2ded\",\"dweb:/ipfs/QmYvGELAqe7kuHuNFQ4sRPBKPLiBHwqKTCmJ889CMNcgQf\"]},\"project:/contracts/gameStorage.sol\":{\"keccak256\":\"0x183e0144d9bfe8427a6abf894c4eb878a998f5a79e22c32b74592185afd80738\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7281bbbd09b0c1002a8510bb25a991793b1039b2fe9a71cdd2785ce805798554\",\"dweb:/ipfs/QmP88i6rwx6eRZZx3tMw3Hc4h8Nh2GTjkd31GbnaszxZgd\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.8.0 <0.9.0;\n\nimport \"./Libraries/LibGame.sol\";\n\nabstract contract gameStorage {\n    uint256 public gameId;\n\n    enum gameState {\n        SCEDULED,\n        STARTED,\n        RUNNING,\n        FINISHED\n    }\n\n    struct gameDetail {\n        address currency;\n        address gameOwner;\n        uint256 gameCreationTime;\n        uint256 price;\n        bool addBidders;\n        uint256 bidStartTime;\n        uint256 bidEndTime;\n        bool winnerDecided;\n        gameState state;\n    }\n    \n    // gameId => gameDetail\n    mapping(uint256 => gameDetail) public gamesDetail;\n    // gameId => Bidders Address\n    mapping(uint256 => address[]) public Bidders;\n    // gameId => (Bidder Address => Bidder Address index)\n    mapping(uint256 => mapping(address => uint256)) public bidderAddressIndex;\n    // gameId => LibGame.Competitor[]\n    mapping(uint256 => LibGame.Competitor[]) public Competitors;\n    \n    // wolletAddress => Currency => Amount\n    mapping(address => mapping(address => uint256)) private userWollet;\n}\n",
+  "sourcePath": "/media/dell/17f09f70-0626-4927-a787-2813ab7ed2c0/dell/Dream Bid/Dream-Bid/contracts/gameStorage.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/gameStorage.sol",
+    "exportedSymbols": {
+      "LibGame": [
+        869
+      ],
+      "gameStorage": [
+        1658
+      ]
+    },
+    "id": 1659,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1601,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:31:9"
+      },
+      {
+        "absolutePath": "project:/contracts/Libraries/LibGame.sol",
+        "file": "./Libraries/LibGame.sol",
+        "id": 1602,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 1659,
+        "sourceUnit": 870,
+        "src": "65:33:9",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "gameStorage",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1658,
+        "linearizedBaseContracts": [
+          1658
+        ],
+        "name": "gameStorage",
+        "nameLocation": "118:11:9",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "d7c81b55",
+            "id": 1604,
+            "mutability": "mutable",
+            "name": "gameId",
+            "nameLocation": "151:6:9",
+            "nodeType": "VariableDeclaration",
+            "scope": 1658,
+            "src": "136:21:9",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1603,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "136:7:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "gameStorage.gameState",
+            "id": 1609,
+            "members": [
+              {
+                "id": 1605,
+                "name": "SCEDULED",
+                "nameLocation": "189:8:9",
+                "nodeType": "EnumValue",
+                "src": "189:8:9"
+              },
+              {
+                "id": 1606,
+                "name": "STARTED",
+                "nameLocation": "207:7:9",
+                "nodeType": "EnumValue",
+                "src": "207:7:9"
+              },
+              {
+                "id": 1607,
+                "name": "RUNNING",
+                "nameLocation": "224:7:9",
+                "nodeType": "EnumValue",
+                "src": "224:7:9"
+              },
+              {
+                "id": 1608,
+                "name": "FINISHED",
+                "nameLocation": "241:8:9",
+                "nodeType": "EnumValue",
+                "src": "241:8:9"
+              }
+            ],
+            "name": "gameState",
+            "nameLocation": "169:9:9",
+            "nodeType": "EnumDefinition",
+            "src": "164:91:9"
+          },
+          {
+            "canonicalName": "gameStorage.gameDetail",
+            "id": 1629,
+            "members": [
+              {
+                "constant": false,
+                "id": 1611,
+                "mutability": "mutable",
+                "name": "currency",
+                "nameLocation": "297:8:9",
+                "nodeType": "VariableDeclaration",
+                "scope": 1629,
+                "src": "289:16:9",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1610,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "289:7:9",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1613,
+                "mutability": "mutable",
+                "name": "gameOwner",
+                "nameLocation": "323:9:9",
+                "nodeType": "VariableDeclaration",
+                "scope": 1629,
+                "src": "315:17:9",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1612,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "315:7:9",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1615,
+                "mutability": "mutable",
+                "name": "gameCreationTime",
+                "nameLocation": "350:16:9",
+                "nodeType": "VariableDeclaration",
+                "scope": 1629,
+                "src": "342:24:9",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1614,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "342:7:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1617,
+                "mutability": "mutable",
+                "name": "price",
+                "nameLocation": "384:5:9",
+                "nodeType": "VariableDeclaration",
+                "scope": 1629,
+                "src": "376:13:9",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1616,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "376:7:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1619,
+                "mutability": "mutable",
+                "name": "addBidders",
+                "nameLocation": "404:10:9",
+                "nodeType": "VariableDeclaration",
+                "scope": 1629,
+                "src": "399:15:9",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 1618,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "399:4:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1621,
+                "mutability": "mutable",
+                "name": "bidStartTime",
+                "nameLocation": "432:12:9",
+                "nodeType": "VariableDeclaration",
+                "scope": 1629,
+                "src": "424:20:9",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1620,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "424:7:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1623,
+                "mutability": "mutable",
+                "name": "bidEndTime",
+                "nameLocation": "462:10:9",
+                "nodeType": "VariableDeclaration",
+                "scope": 1629,
+                "src": "454:18:9",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1622,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "454:7:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1625,
+                "mutability": "mutable",
+                "name": "winnerDecided",
+                "nameLocation": "487:13:9",
+                "nodeType": "VariableDeclaration",
+                "scope": 1629,
+                "src": "482:18:9",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 1624,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "482:4:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1628,
+                "mutability": "mutable",
+                "name": "state",
+                "nameLocation": "520:5:9",
+                "nodeType": "VariableDeclaration",
+                "scope": 1629,
+                "src": "510:15:9",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_gameState_$1609",
+                  "typeString": "enum gameStorage.gameState"
+                },
+                "typeName": {
+                  "id": 1627,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 1626,
+                    "name": "gameState",
+                    "nameLocations": [
+                      "510:9:9"
+                    ],
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 1609,
+                    "src": "510:9:9"
+                  },
+                  "referencedDeclaration": 1609,
+                  "src": "510:9:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_gameState_$1609",
+                    "typeString": "enum gameStorage.gameState"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "gameDetail",
+            "nameLocation": "268:10:9",
+            "nodeType": "StructDefinition",
+            "scope": 1658,
+            "src": "261:271:9",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "7a227918",
+            "id": 1634,
+            "mutability": "mutable",
+            "name": "gamesDetail",
+            "nameLocation": "608:11:9",
+            "nodeType": "VariableDeclaration",
+            "scope": 1658,
+            "src": "570:49:9",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_gameDetail_$1629_storage_$",
+              "typeString": "mapping(uint256 => struct gameStorage.gameDetail)"
+            },
+            "typeName": {
+              "id": 1633,
+              "keyType": {
+                "id": 1630,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "578:7:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "570:30:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_gameDetail_$1629_storage_$",
+                "typeString": "mapping(uint256 => struct gameStorage.gameDetail)"
+              },
+              "valueType": {
+                "id": 1632,
+                "nodeType": "UserDefinedTypeName",
+                "pathNode": {
+                  "id": 1631,
+                  "name": "gameDetail",
+                  "nameLocations": [
+                    "589:10:9"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 1629,
+                  "src": "589:10:9"
+                },
+                "referencedDeclaration": 1629,
+                "src": "589:10:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_gameDetail_$1629_storage_ptr",
+                  "typeString": "struct gameStorage.gameDetail"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "5b60c989",
+            "id": 1639,
+            "mutability": "mutable",
+            "name": "Bidders",
+            "nameLocation": "695:7:9",
+            "nodeType": "VariableDeclaration",
+            "scope": 1658,
+            "src": "658:44:9",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_array$_t_address_$dyn_storage_$",
+              "typeString": "mapping(uint256 => address[])"
+            },
+            "typeName": {
+              "id": 1638,
+              "keyType": {
+                "id": 1635,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "666:7:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "658:29:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_array$_t_address_$dyn_storage_$",
+                "typeString": "mapping(uint256 => address[])"
+              },
+              "valueType": {
+                "baseType": {
+                  "id": 1636,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "677:7:9",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "id": 1637,
+                "nodeType": "ArrayTypeName",
+                "src": "677:9:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                  "typeString": "address[]"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "ec09376d",
+            "id": 1645,
+            "mutability": "mutable",
+            "name": "bidderAddressIndex",
+            "nameLocation": "821:18:9",
+            "nodeType": "VariableDeclaration",
+            "scope": 1658,
+            "src": "766:73:9",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_mapping$_t_address_$_t_uint256_$_$",
+              "typeString": "mapping(uint256 => mapping(address => uint256))"
+            },
+            "typeName": {
+              "id": 1644,
+              "keyType": {
+                "id": 1640,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "774:7:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "766:47:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_mapping$_t_address_$_t_uint256_$_$",
+                "typeString": "mapping(uint256 => mapping(address => uint256))"
+              },
+              "valueType": {
+                "id": 1643,
+                "keyType": {
+                  "id": 1641,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "793:7:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "785:27:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                  "typeString": "mapping(address => uint256)"
+                },
+                "valueType": {
+                  "id": 1642,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "804:7:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "07597c1c",
+            "id": 1651,
+            "mutability": "mutable",
+            "name": "Competitors",
+            "nameLocation": "931:11:9",
+            "nodeType": "VariableDeclaration",
+            "scope": 1658,
+            "src": "883:59:9",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_array$_t_struct$_Competitor_$868_storage_$dyn_storage_$",
+              "typeString": "mapping(uint256 => struct LibGame.Competitor[])"
+            },
+            "typeName": {
+              "id": 1650,
+              "keyType": {
+                "id": 1646,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "891:7:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "883:40:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_array$_t_struct$_Competitor_$868_storage_$dyn_storage_$",
+                "typeString": "mapping(uint256 => struct LibGame.Competitor[])"
+              },
+              "valueType": {
+                "baseType": {
+                  "id": 1648,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 1647,
+                    "name": "LibGame.Competitor",
+                    "nameLocations": [
+                      "902:7:9",
+                      "910:10:9"
+                    ],
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 868,
+                    "src": "902:18:9"
+                  },
+                  "referencedDeclaration": 868,
+                  "src": "902:18:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Competitor_$868_storage_ptr",
+                    "typeString": "struct LibGame.Competitor"
+                  }
+                },
+                "id": 1649,
+                "nodeType": "ArrayTypeName",
+                "src": "902:20:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_Competitor_$868_storage_$dyn_storage_ptr",
+                  "typeString": "struct LibGame.Competitor[]"
+                }
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 1657,
+            "mutability": "mutable",
+            "name": "userWollet",
+            "nameLocation": "1052:10:9",
+            "nodeType": "VariableDeclaration",
+            "scope": 1658,
+            "src": "996:66:9",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_address_$_t_uint256_$_$",
+              "typeString": "mapping(address => mapping(address => uint256))"
+            },
+            "typeName": {
+              "id": 1656,
+              "keyType": {
+                "id": 1652,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "1004:7:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "996:47:9",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_address_$_t_uint256_$_$",
+                "typeString": "mapping(address => mapping(address => uint256))"
+              },
+              "valueType": {
+                "id": 1655,
+                "keyType": {
+                  "id": 1653,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1023:7:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "1015:27:9",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                  "typeString": "mapping(address => uint256)"
+                },
+                "valueType": {
+                  "id": 1654,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1034:7:9",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                }
+              }
+            },
+            "visibility": "private"
+          }
+        ],
+        "scope": 1659,
+        "src": "100:965:9",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:1034:9"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2023-05-04T03:30:07.806Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
